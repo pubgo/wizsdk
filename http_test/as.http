@@ -1,0 +1,37 @@
+### 用户登录
+POST {{baseUrl}}/as/user/login
+Content-Type: application/json
+
+{
+  "userId": "{{username}}",
+  "password": "{{password}}"
+}
+
+### 通过有效的token，获取用户信息
+POST {{baseUrl}}/as/user/login/token
+Content-Type: application/json
+
+{
+  "token": "{{token}}"
+}
+
+### 注销token
+GET {{baseUrl}}/as/user/logout
+X-Wiz-Token: {{token}}
+
+### 延长token有效期
+GET {{baseUrl}}/as/user/keep
+X-Wiz-Token: {{token}}
+
+### 获取用户信息
+GET {{baseUrl}}/as/user/info
+X-Wiz-Token: {{token}}
+
+### 获取用户的加密笔记证书
+GET {{baseUrl}}/as/user/cert
+X-Wiz-Token: {{token}}
+
+###
+
+
+

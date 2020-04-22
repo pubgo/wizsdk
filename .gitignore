@@ -26,3 +26,4 @@ kdata
 migrations/m_*.go
 node_modules
 go.sum
+http_test/http-client.private.env.json

@@ -1,0 +1,5 @@
+### 获取笔记点赞列表
+GET {{kbServer}}/ks/favor/:kbGuid/:docGuid
+X-Wiz-Token: {{token}}
+
+###

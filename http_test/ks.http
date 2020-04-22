@@ -1,0 +1,50 @@
+### 获取所有文件夹
+GET {{kbServer}}/ks/category/all/{{kbGuid}}
+X-Wiz-Token: {{token}}
+
+### 创建文件夹
+POST {{kbServer}}/ks/category/create/{{kbGuid}}
+Content-Type: application/json
+X-Wiz-Token: {{token}}
+
+{
+  "parent": "",
+  "child": ""
+  "pos": ""
+}
+
+### 排序文件夹
+PUT {{kbServer}}/ks/category/sort/{{kbGuid}}
+Content-Type: application/json
+X-Wiz-Token: {{token}}
+
+{
+  "/My Notes/": 0,
+  "/New Folder/": 1
+}
+
+
+### 重命名文件夹
+PUT {{kbServer}}/ks/category/rename/{{kbGuid}}
+Content-Type: application/json
+X-Wiz-Token: {{token}}
+
+{
+  "from": "",
+  "to": ""
+}
+
+### 删除文件夹
+DELETE {{kbServer}}/ks/category/delete/{{kbGuid}}
+X-Wiz-Token: {{token}}
+
+
+### 获取kb信息
+GET {{kbServer}}/ks/kb/info/{{kbGuid}}
+X-Wiz-Token: {{token}}
+
+### 获取某一个kb的笔记数量
+GET {{kbServer}}/ks/kb/{{kbGuid}}/document/count
+X-Wiz-Token: {{token}}
+
+###

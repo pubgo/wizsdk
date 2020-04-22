@@ -1,0 +1,5 @@
+### 获取全部标签
+GET {{kbServer}}/ks/tag/all/{{kbGuid}}
+X-Wiz-Token: {{token}}
+
+###
